@@ -12,6 +12,6 @@ This installs the required dependencies
 3. To run the React project.
 ### `npm start`
 
-** You are done! Now you can open [http://localhost:3000](http://localhost:3000) to view it in your browser. **
+**You are done! Now you can open [http://localhost:3000](http://localhost:3000) to view it in your browser.**
 
 ## Heroku demo link: https://shoes-shop-web.herokuapp.com/
