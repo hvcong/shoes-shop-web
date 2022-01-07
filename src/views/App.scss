@@ -1,0 +1,58 @@
+@import '../styles/variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.app {
+    height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $black-color;
+
+    &:before {
+        content: "";
+        display: block;
+        position: fixed;
+        width: 300%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        border-radius: 100%;
+        transform: translateX(-50%) skewY(-8deg);
+        background-color: #f6c90e;
+        z-index: -1;
+        animation: updown 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes updown {
+        0% {
+            transform: translateX(-45%) skewY(-8deg);
+        }
+
+        50% {
+            transform: translateX(-50%) skewY(-8deg);
+        }
+
+        100% {
+            transform: translateX(-45%) skewY(-8deg);
+        }
+
+    }
+
+    @media screen and(max-width: 800px) {
+        height: auto;
+        flex-direction: column;
+    }
+}

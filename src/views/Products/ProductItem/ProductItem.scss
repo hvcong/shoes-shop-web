@@ -1,0 +1,104 @@
+@import '../../../styles/variables';
+
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+
+
+    &__img {
+        height: 380px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        overflow: hidden;
+
+
+        img {
+            margin-left: -28px;
+            width: 100%;
+            transform: rotate(-24deg);
+            filter: drop-shadow(0 30px 20px rgba(0, 0, 0, .2))
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 1.5;
+        margin: 26px 0 20px;
+    }
+
+    &__des {
+        font-size: 13px;
+        line-height: 1.8;
+        margin-bottom: 20px;
+        color: #777;
+        font-weight: lighter;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+
+        .btn {
+            width: auto;
+            height: 46px;
+            min-width: 46px;
+            padding: 0 20px;
+            border-radius: 100px;
+            background-color: $yellow-color;
+            font-weight: 700;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            transition: all .25s ease;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            white-space: nowrap;
+
+        }
+
+        .product__btn-add {
+            &:hover {
+                cursor: pointer;
+                background-color: #f8d43f;
+                box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.15);
+            }
+
+        }
+
+        .product__btn-check {
+            width: 46px;
+            pointer-events: none;
+            cursor: default;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 21px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        padding: 20px 0;
+    }
+
+    @media screen and (max-width: 300px) {
+
+        &__img {
+            height: 240px;
+        }
+    }
+}

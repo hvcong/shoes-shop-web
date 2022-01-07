@@ -1,0 +1,75 @@
+@import '../styles/variables';
+
+.card {
+    width: 360px;
+    height: 600px;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0 28px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 3.2px 2.2px rgba(0, 0, 0, 0.02), 0 7px 5.4px rgba(0, 0, 0, 0.03), 0 12.1px 10.1px rgba(0, 0, 0, 0.04), 0 19.8px 18.1px rgba(0, 0, 0, 0.05), 0 34.7px 33.8px rgba(0, 0, 0, 0.06), 0 81px 81px rgba(0, 0, 0, 0.07);
+
+    @media screen and (max-width: 800px) {
+        margin: 20px auto;
+    }
+
+    @media screen and (max-width: 480px) {
+        width: 340px;
+    }
+
+    @media screen and (max-width: 300px) {
+        width: 300px;
+        height: 480px;
+        padding: 0 14px;
+    }
+
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        background-color: #f6c90e;
+        top: -20%;
+        left: -50%;
+        z-index: 0;
+    }
+
+    &__logo {
+        height: 26px;
+        margin: 12px 0;
+        position: relative;
+
+        &-img {
+            height: 100%;
+        }
+    }
+
+    &__heading {
+        font-size: 24px;
+        margin: 16px 0;
+        color: $black-color;
+        font-weight: 700;
+        position: relative;
+
+        &-total {
+            float: right;
+            transition: all 0.3s ease;
+        }
+    }
+
+    &__body {
+        height: calc(100% - 98px);
+        position: relative;
+        overflow-y: scroll;
+    }
+
+    &__body::-webkit-scrollbar {
+        display: none;
+    }
+
+}
