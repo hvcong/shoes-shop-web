@@ -35,7 +35,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "node-sass": "^7.0.1"
-  }
+  "devDependencies": {}
 }
