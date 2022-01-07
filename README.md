@@ -1,13 +1,6 @@
 # How to use
 
 ## Use in local
-In the project directory, you can run:
-### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-## Heroku demo link: https://shoes-shop-web.herokuapp.com/
-
 1. Open your terminal and then type
 ### `git clone {the url to the GitHub repo}`
 This clones the repo
@@ -20,3 +13,5 @@ This installs the required dependencies
 ### `npm start`
 
 ** You are done! Now you can open [http://localhost:3000](http://localhost:3000) to view it in your browser. **
+
+## Heroku demo link: https://shoes-shop-web.herokuapp.com/
